@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Especificidade</title>
+  <style>
+    p {
+      color: blue;
+    }
+
+    .nova-cor {
+      color: black;
+    }
+
+    #nova-cor-id {
+      color: brown;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- ESPECIFICIDADE ( INLINE.ID.CLASSE.TAG)-->
+
+  <p>Prazeres</p> <!-- 0.0.0.1 -->
+
+  <p class="nova-cor">Prazeres</p> <!-- 0.0.1.1 -->
+
+  <p id="nova-cor-id">Prazeres</p> <!-- 0.1.0.1 -->
+
+  <p id="nova-cor-id" class="nova-cor">Prazeres</p> <!-- 0.1.1.1 -->
+
+  <p class="nova-cor" id="nova-cor-id" style="color:turquoise">Prazeres</p> <!-- 1.1.1.1 -->
+
+  <p>Prazeres</p>
+  <p>Prazeres</p>
+
+</body>
+
+</html>

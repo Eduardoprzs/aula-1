@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulario</title>
+
+</head>
+
+<body>
+  <form>
+    <label for="name">Nome:
+      <input type="text" id="name" />
+    </label>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" required />
+
+    <button>Enviar Formulario</button>
+
+    <h2> Informe abaixo qual o seu plano:</h2>
+
+    RADIO(ASSINALAR UMA OPÇAO)
+    <label for="plano-basico">
+      <input type="radio" id="plano-basico" name="plano" value="basico"> Basico </label> <br>
+
+    <label for="plano-intermediario">
+      <input type="radio" id="plano-intermediario" name="plano" value="intermediario"> Intermediario </label> <br>
+
+    <label for="plano-master">
+      <input type="radio" id="plano-master" name="plano" value="master"> Master </label> <br>
+
+    <h2>Informe o tipo de produto que deseja:</h2>
+
+    CHECKBOXS(ASSINALAR MAIS DE UMA OPÇAO)
+    <label>
+      <input type="checkbox" name="produto" value="doces"> Doces
+    </label>
+    <label>
+      <input type="checkbox" name="produto" value="licores"> licores
+    </label>
+    <label>
+      <input type="checkbox" name="produto" value="geleias"> Geléias
+    </label>
+
+  </form>
+</body>
+
+</html>
